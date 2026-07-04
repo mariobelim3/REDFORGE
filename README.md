@@ -36,5 +36,65 @@ O projeto foi construído como portfólio prático de cibersegurança, com foco 
 
 ---
 
-## 🏗️ Arquitetura# REDFORCE
-Automated Red Team toolkit in Python - full pentest cycle with reporting
+## 🏗️ Arquitetura
+REDFORGE/
+├── attacks/              # Scripts de ataque por técnica MITRE ATT&CK
+│   ├── recon/            #   T1046 — Network Service Scanning
+│   ├── exploitation/     #   T1110 — Brute Force, exploits específicos
+│   └── post/             #   T1083 — File Discovery, exfiltração
+├── orchestrator/         # Motor principal — corre o ciclo completo em cadeia
+├── reports/              # Relatórios gerados automaticamente (PDF/Markdown)
+├── docs/                 # Documentação técnica e mapeamento MITRE
+└── requirements.txt
+---
+
+## 🔁 Fluxo de Execução
+[ Recon ]──▶[ Vuln Analysis ]──▶[ Exploitation ]──▶[ Post-Exploitation ]──▶[ Report ]
+│               │                   │                    │                   │
+Scanner        CVE Lookup         vsftpd, Samba,       Privesc,            PDF/MD
+de portas      via NVD API        Brute Force          Exfiltração         automático
+(sockets)      + CVSS score       (Paramiko)           simulada
+---
+
+## 🧪 Ambiente de Laboratório
+
+| Componente       | Função                        |
+|-----------------|-------------------------------|
+| Kali Linux      | Máquina atacante               |
+| Metasploitable2 | Alvo principal (vulnerável)    |
+| Wazuh           | Monitorização e deteção (SIEM) |
+| VirtualBox      | Hypervisor (rede interna NAT)  |
+
+> Infraestrutura documentada no repositório [home-lab](https://github.com/mariobelim3) ← atualiza com o link real
+
+---
+
+## 🗺️ Roadmap
+
+| Fase | Descrição | Estado |
+|------|-----------|--------|
+| 0 | Preparação do lab e estrutura do repositório | ✅ Concluído |
+| 1 | Reconhecimento (scanner de portas, banner grabbing) | 🔄 Em progresso |
+| 2 | Análise de vulnerabilidades (CVE lookup, CVSS) | ⏳ Pendente |
+| 3 | Exploração (vsftpd, Samba, distcc, brute force) | ⏳ Pendente |
+| 4 | Orquestrador (pipeline recon → exploit) | ⏳ Pendente |
+| 5 | Pós-exploração (privesc, exfiltração simulada) | ⏳ Pendente |
+| 6 | Reporting automático (PDF/Markdown profissional) | ⏳ Pendente |
+
+---
+
+## 🛠️ Stack Técnico
+
+- **Python 3.10+** — linguagem principal
+- **Scapy / sockets** — recon e scanning
+- **Paramiko** — ataques SSH
+- **Requests** — integração com APIs (NVD, Wazuh)
+- **ReportLab / Markdown** — geração de relatórios
+
+---
+
+## 👤 Autor
+
+**Mário** · Estudante de Engenharia Informática — Universidade da Madeira  
+Área de interesse: Cibersegurança & Redes  
+GitHub: [@mariobelim3](https://github.com/mariobelim3)
