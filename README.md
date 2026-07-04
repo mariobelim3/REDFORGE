@@ -46,7 +46,7 @@ REDFORGE/
 ├── reports/              # Relatórios gerados automaticamente (PDF/Markdown)
 ├── docs/                 # Documentação técnica e mapeamento MITRE
 └── requirements.txt
----
+--- #
 
 ## 🔁 Fluxo de Execução
 [ Recon ]──▶[ Vuln Analysis ]──▶[ Exploitation ]──▶[ Post-Exploitation ]──▶[ Report ]
@@ -54,7 +54,7 @@ REDFORGE/
 Scanner        CVE Lookup         vsftpd, Samba,       Privesc,            PDF/MD
 de portas      via NVD API        Brute Force          Exfiltração         automático
 (sockets)      + CVSS score       (Paramiko)           simulada
----
+--- #
 
 ## 🧪 Ambiente de Laboratório
 
