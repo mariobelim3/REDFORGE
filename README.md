@@ -78,10 +78,10 @@ REDFORGE/
 |------|-----------|--------|
 | 0 | Preparação do lab e estrutura do repositório | ✅ Concluído |
 | 1 | Reconhecimento (scanner de portas, banner grabbing) | ✅ Concluído |
-| 2 | Análise de vulnerabilidades (CVE lookup, CVSS) | ✅ Concluído  |
-| 3 | Exploração (vsftpd, Samba, distcc, brute force) | 🔄 Em progresso |
-| 4 | Orquestrador (pipeline recon → exploit) | ⏳ Pendente |
-| 5 | Pós-exploração (privesc, exfiltração simulada) | ⏳ Pendente |
+| 2 | Análise de vulnerabilidades (CVE lookup, CVSS) | ✅ Concluído |
+| 3 | Exploração (vsftpd, Samba, distcc, brute force) | ✅ Concluído |
+| 4 | Orquestrador (pipeline recon → exploit) | ✅ Concluído |
+| 5 | Pós-exploração (privesc, exfiltração simulada) | 🔄 Em progresso |
 | 6 | Reporting automático (PDF/Markdown profissional) | ⏳ Pendente |
 
 ---
