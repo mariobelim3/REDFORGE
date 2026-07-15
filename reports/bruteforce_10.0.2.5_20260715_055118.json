@@ -1,0 +1,25 @@
+{
+    "technique": "T1110.001",
+    "target": "10.0.2.5",
+    "timestamp": "2026-07-15T05:50:46.807007",
+    "credentials_tested": 14,
+    "found": [
+        {
+            "username": "msfadmin",
+            "password": "msfadmin"
+        },
+        {
+            "username": "user",
+            "password": "user"
+        },
+        {
+            "username": "postgres",
+            "password": "postgres"
+        },
+        {
+            "username": "service",
+            "password": "service"
+        }
+    ],
+    "success": true
+}
