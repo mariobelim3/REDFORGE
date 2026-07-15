@@ -86,6 +86,22 @@ REDFORGE/
 
 ---
 
+## 📸 Evidências
+
+### Fase 1 — Reconhecimento
+
+![port scanner](docs/screenshots/phase1_port_scanner.png)
+
+### Fase 2 — Análise de Vulnerabilidades
+
+![vuln scanner](docs/screenshots/phase2_vuln_scanner.png)
+
+### Fase 3 — Exploração
+
+**vsftpd 2.3.4 Backdoor (CVE-2011-2523 | CVSS 9.8 CRITICAL)**
+
+![vsftpd exploit](docs/screenshots/phase3_vsftpd_exploit.png)
+
 ## 🛠️ Stack Técnico
 
 - **Python 3.10+** — linguagem principal
