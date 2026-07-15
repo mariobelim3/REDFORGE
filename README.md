@@ -102,6 +102,10 @@ REDFORGE/
 
 ![vsftpd exploit](docs/screenshots/phase3_vsftpd_exploit.png)
 
+**Samba usermap_script RCE (CVE-2007-2447 | CVSS 9.3 CRITICAL)**
+
+![samba exploit](docs/screenshots/phase3_samba_usermap.png)
+
 ## 🛠️ Stack Técnico
 
 - **Python 3.10+** — linguagem principal
