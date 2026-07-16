@@ -1,0 +1,43 @@
+{
+    "target": "10.0.2.5",
+    "timestamp": "2026-07-16T04:33:17.276033",
+    "credentials_used": {
+        "username": "msfadmin",
+        "password": "msfadmin"
+    },
+    "enumeration": {
+        "T1087 \u2014 Account Discovery": "root\ndaemon\nbin\nsys\nsync\ngames\nman\nlp\nmail\nnews\nuucp\nproxy\nwww-data\nbackup\nlist\nirc\ngnats\nnobody\nlibuuid\ndhcp\nsyslog\nklog\nsshd\nmsfadmin\nbind\npostfix\nftp\npostgres\nmysql\ntomcat55\ndistccd\nuser\nservice\ntelnetd\nproftpd\nstatd",
+        "T1057 \u2014 Process Discovery": "root         1  0.2  0.3   2844  1696 ?        Ss   04:25   0:01 /sbin/init\nroot         2  0.0  0.0      0     0 ?        S<   04:25   0:00 [kthreadd]\nroot         3  0.0  0.0      0     0 ?        S<   04:25   0:00 [migration/0]\nroot         4  0.0  0.0      0     0 ?        S<   04:25   0:00 [ksoftirqd/0]\nroot         5  0.0  0.0      0     0 ?        S<   04:25   0:00 [watchdog/0]\nroot         6  0.0  0.0      0     0 ?        S<   04:25   0:00 [events/0]\nroot         7  0.0  0.0      0     0 ?        S<   04:25   0:00 [khelper]\nroot        41  0.0  0.0      0     0 ?        S<   04:25   0:00 [kblockd/0]\nroot        44  0.0  0.0      0     0 ?        S<   04:25   0:00 [kacpid]\nroot        45  0.0  0.0      0     0 ?        S<   04:25   0:00 [kacpi_notify]\nroot        91  0.0  0.0      0     0 ?        S<   04:25   0:00 [kseriod]\nroot       130  0.0  0.0      0     0 ?        S    04:25   0:00 [pdflush]\nroot       131  0.0  0.0      0     0 ?        S    04:25   0:00 [pdflush]\nroot       132  0.0  0.0      0     0 ?        S<   04:25   0:00 [kswapd0]\nroot       174  0.0  0.0      0     0 ?        S<   04:25   0:00 [aio/0]",
+        "T1083 \u2014 File Discovery": "/home/service/.profile\n/home/service/.bashrc\n/home/service/.bash_logout\n/home/user/.profile\n/home/user/.bash_history\n/home/user/.bashrc\n/home/user/.bash_logout\n/home/msfadmin/.mysql_history\n/home/msfadmin/vulnerable/samba/3.0.20/samba-3.0.20.tar.gz\n/home/msfadmin/vulnerable/samba/3.0.20/debs/winbind_3.0.20-0.1ubuntu1_i386.deb",
+        "T1049 \u2014 Network Connections": "tcp        0      0 0.0.0.0:512             0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:513             0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:2049            0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:514             0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:8009            0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:6697            0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:38986           0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:1099            0.0.0.0:*               LISTEN     \ntcp        0      0 0.0.0.0:6667            0.0.0.0:*               LISTEN",
+        "T1082 \u2014 System Information": "Linux metasploitable 2.6.24-16-server #1 SMP Thu Apr 10 13:58:00 UTC 2008 i686 GNU/Linux\nuid=1000(msfadmin) gid=1000(msfadmin) groups=4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),107(fuse),111(lpadmin),112(admin),119(sambashare),1000(msfadmin)\nmsfadmin"
+    },
+    "exfiltration": [
+        {
+            "file": "/etc/passwd",
+            "accessible": true,
+            "preview": "root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/bin/sh\nbin:x:2:2:bin:/bin:/bin/sh"
+        },
+        {
+            "file": "/etc/shadow",
+            "accessible": false,
+            "preview": null
+        },
+        {
+            "file": "/etc/hosts",
+            "accessible": true,
+            "preview": "127.0.0.1\tlocalhost\n127.0.1.1\tmetasploitable.localdomain\tmetasploitable"
+        },
+        {
+            "file": "/var/www/html/index.php",
+            "accessible": false,
+            "preview": null
+        },
+        {
+            "file": "/home/msfadmin/.bash_history",
+            "accessible": false,
+            "preview": null
+        }
+    ],
+    "success": true
+}
