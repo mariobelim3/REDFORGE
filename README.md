@@ -126,6 +126,15 @@ REDFORGE/
 ![post exploitation 1](docs/screenshots/phase5_post_exploitation_1.png)
 ![post exploitation 2](docs/screenshots/phase5_post_exploitation_2.png)
 
+### Fase 6 — Reporting Automático
+
+**Relatório profissional gerado automaticamente em Markdown**
+
+![report 1](docs/screenshots/phase6_report_1.png)
+![report 2](docs/screenshots/phase6_report_2.png)
+![report 3](docs/screenshots/phase6_report_3.png)
+![report 4](docs/screenshots/phase6_report_4.png)
+
 ## 🛠️ Stack Técnico
 
 - **Python 3.10+** — linguagem principal
