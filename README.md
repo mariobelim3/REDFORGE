@@ -82,7 +82,7 @@ REDFORGE/
 | 3 | Exploração (vsftpd, Samba, distcc, brute force) | ✅ Concluído |
 | 4 | Orquestrador (pipeline recon → exploit) | ✅ Concluído |
 | 5 | Pós-exploração (privesc, exfiltração simulada) | ✅ Concluído |
-| 6 | Reporting automático (PDF/Markdown profissional) | 🔄 Em progresso |
+| 6 | Reporting automático (PDF/Markdown profissional) | ✅ Concluído |
 
 ---
 
